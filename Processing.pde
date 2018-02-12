@@ -1,14 +1,9 @@
-
-color fillVal = color(126);
-
-
+var screen = 0;
 
 void draw() {
-
-  fill(fillVal);
-
-  rect(25, 25, 50, 50);
-
+  if(screen===0){
+    background(0,0,0);
+  }
 }
 
 
