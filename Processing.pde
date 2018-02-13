@@ -1,4 +1,4 @@
-var screen = 0;
+var screen = localStorage.getItem('screen');
 
 void setup() {
   size(700, 700);
@@ -19,8 +19,10 @@ void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
       screen=1;
+      localStorage.setItem('screen',1);
     } else if (keyCode == DOWN) {
       screen=0;
+      localStorage.setItem('screen',0);
     } 
   } else {
     
