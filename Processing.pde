@@ -1,7 +1,7 @@
 var screen = 0;
 var player = {x:0,y:0,speed:3,gPull:0};
 
-const gravity = 1;
+const gravity = 0.1;
 void setup() {
   size(700, 700);
   frameRate(90)
