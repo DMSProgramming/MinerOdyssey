@@ -1,6 +1,5 @@
 var screen = 0;
-localStorage.setItem('playerX','100');
-var player = {x:parseInt(localStorage.getItem('PlayerX'))};
+var player = {x:0,y:0};
 
 void setup() {
   size(700, 700);
@@ -15,7 +14,7 @@ void draw() {
     fill(0,0,0);
     background(255,255,255);
   }
-  text(player.x,10,10);
+  rect(player.x,player.y,10,10);
 }
 
 
@@ -23,9 +22,13 @@ void draw() {
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
-      screen=1;
+      player.y--;
     } else if (keyCode == DOWN) {
-      screen=0;
+      player.y++;
+    } else if (keyCode == LEFT) {
+      player.x--;
+    } else if (keyCode == RIGHT) {
+      player.x++;
     } 
   } else {
     
