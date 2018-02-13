@@ -1,8 +1,9 @@
 var screen = 0;
-var player = {x:0,y:0,speed:10};
+var player = {x:0,y:0,speed:3};
 
 void setup() {
   size(700, 700);
+  frameRate(90)
 }
 
 void draw() {
