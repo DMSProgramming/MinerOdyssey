@@ -1,8 +1,6 @@
 var screen = 0;
 var player = {x:0,y:0,speed:3};
 var eat = 0
-while (True) {
-alert(lololoolololololololo);
 };
 void setup() {
   size(700, 700);
