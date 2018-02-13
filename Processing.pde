@@ -7,6 +7,10 @@ void setup() {
   frameRate(90)
 }
 
+void block (x,y,w,h) {
+    rect(x,y,w,h);
+}
+
 void draw() {
   if(screen===0){
     fill(255,255,255);
@@ -19,6 +23,7 @@ void draw() {
   rect(player.x,player.y,10,10);
   player.gPull += gravity;
   player.y += player.gPull;
+  block(0,100,100,100);
 }
 
 
