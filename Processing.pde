@@ -1,5 +1,5 @@
 var screen = 0;
-var player = {x:0,y:0};
+var player = {x:0,y:0,speed:10};
 
 void setup() {
   size(700, 700);
@@ -22,13 +22,13 @@ void draw() {
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
-      player.y--;
+      player.y-=player.speed;
     } else if (keyCode == DOWN) {
-      player.y++;
+      player.y+=player.speed;
     } else if (keyCode == LEFT) {
-      player.x--;
+      player.x-=player.speed;
     } else if (keyCode == RIGHT) {
-      player.x++;
+      player.x+=player.speed;
     } 
   } else {
     
