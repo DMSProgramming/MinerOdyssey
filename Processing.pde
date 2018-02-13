@@ -1,6 +1,6 @@
 var screen = 0;
 localStorage.setItem('playerX','100');
-var player = {x:player.x(localStorage.getItem('PlayerX'))};
+var player = {x:parseInt(localStorage.getItem('PlayerX'))};
 
 void setup() {
   size(700, 700);
