@@ -1,5 +1,5 @@
 var screen = 0;
-localStorage.setItem('favoriteflavor','vanilla');
+//localStorage.setItem('favoriteflavor','vanilla');
 var taste = localStorage.getItem('favoriteflavor');
 
 void setup() {
