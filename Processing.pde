@@ -1,6 +1,6 @@
 var screen = 0;
-//localStorage.setItem('favoriteflavor','vanilla');
-var taste = localStorage.getItem('favoriteflavor');
+localStorage.setItem('playerX','100');
+var player = {x:localStorage.getItem('PlayerX')};
 
 void setup() {
   size(700, 700);
@@ -15,7 +15,7 @@ void draw() {
     fill(0,0,0);
     background(255,255,255);
   }
-  text(taste,10,10);
+  text(player.x,10,10);
 }
 
 
